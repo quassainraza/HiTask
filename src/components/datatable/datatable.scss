@@ -1,0 +1,92 @@
+.datatable{
+    height: 600px;
+    width: 100%;
+    padding: 20px;
+
+
+    .datatableTitle{
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link{
+            text-decoration: none;
+            color: green;
+            font-size: 16px;
+            font-weight: 400;
+            border: 1px solid green ;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(89, 160, 89);
+            }
+
+        }
+    }
+
+    .status{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Completed{
+            color: green;
+            background-color: rgba(31, 231, 97, 0.26);
+        }
+        &.Ongoing{
+            color: rgb(211, 211, 15);
+            background-color: rgba(146, 158, 41, 0.116);
+        }
+        &.Upcoming{
+            color: red;
+            background-color: rgba(216, 40, 40, 0.336) ;
+        }
+    }
+    .priority{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.High{
+            color: green;
+            background-color: rgba(31, 231, 97, 0.26);
+        }
+        &.low{
+            color: rgb(207, 75, 75);
+            background-color: rgba(158, 41, 47, 0.562);
+        }
+        &.medium{
+            color: rgba(236, 252, 17, 0.575);
+            background-color: rgba(64, 70, 13, 0.541) ;
+        }
+    }
+    .cellAction{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewbutton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: blue;
+            border: 1px dotted rgba(38, 38, 204, 0.514);
+            cursor: pointer;
+            &:hover{
+                background-color: aquamarine;
+            }
+        }
+        .deletebutton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: rgb(172, 34, 34);
+            border: 1px dotted rgba(224, 104, 124, 0.514);
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(220, 20, 60, 0.356);
+            }
+        }
+    }
+}
