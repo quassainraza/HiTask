@@ -11,6 +11,7 @@ const New1 = ({inputs,title}) => {
   return (
     <div className='new'>
       <Sidebar>
+        
       </Sidebar>
       <div className='newContainer'>
 
